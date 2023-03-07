@@ -1,0 +1,4 @@
+idyntree=8.0.1
+pyparsing=3.0.9 
+casadi=3.5.5
+numpy=1.22
