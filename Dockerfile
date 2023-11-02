@@ -1,8 +1,6 @@
 ARG from=ubuntu:focal
 FROM ${from}
 
-# TODO: https://jcristharif.com/conda-docker-tips.html
-
 # ========
 # HEADLESS
 # ========
@@ -118,11 +116,6 @@ RUN mamba install compilers make pkg-config libblas liblapack metis && \
     ln -s -v ./libcoinhsl.so ./libhsl.so &&\
     rm -r /tmp/coinhsl* &&\
     rm -r /tmp/ThirdParty-HSL
-
-RUN echo 'export IPOPT_DIR=/CoinIpopt/install' >> /etc/bash.bashrc && \
-    echo 'export PKG_CONFIG_PATH=${PKG_CONFIG_PATH}:${IPOPT_DIR}/lib/pkgconfig' >> /etc/bash.bashrc && \
-    echo 'export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${IPOPT_DIR}/lib' >> /etc/bash.bashrc&& \
-    echo 'export PATH=${PATH}:${IPOPT_DIR}/lib' >> /etc/bash.bashrc
 
 
 RUN mkdir genetic_algorithm_code
