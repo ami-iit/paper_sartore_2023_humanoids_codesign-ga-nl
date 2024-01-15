@@ -6,7 +6,7 @@ Codesign of Humanoid Robots for Ergonomic Collaboration with Multiple Humans via
 
 <div align="center">
 
-C.Sartore, L.Rapett, F.Bergonti, S.Dafarra, S.Traversaro, D.Pucci  _"Codesign of Humanoid Robots for Ergonomic Collaboration with Multiple Humans via Genetic Algorithms and Nonlinear Optimization "_
+C.Sartore, L.Rapetti, F.Bergonti, S.Dafarra, S.Traversaro, D.Pucci  _"Codesign of Humanoid Robots for Ergonomic Collaboration with Multiple Humans via Genetic Algorithms and Nonlinear Optimization "_
 in 2023 IEEE-RAS International Conference on Humanoid Robotics (Humanoids)
 
 </div>
@@ -14,7 +14,7 @@ in 2023 IEEE-RAS International Conference on Humanoid Robotics (Humanoids)
 <p align="center">
 
 
-[![Video](https://github.com/ami-iit/paper_sartore_2022_humanoids_ergonomic_design/assets/56030908/a0d66262-5539-481e-ac42-60219561b607)](https://github.com/ami-iit/paper_sartore_2022_humanoids_ergonomic_design/assets/56030908/6f73779e-5153-4048-bb1d-706c59b80490)
+[![Video](https://github.com/ami-iit/paper_sartore_2023_humanoids_codesign-ga-nl/assets/56030908/3ec1c7fa-d23a-4765-a488-49d5e983082a)](https://github.com/ami-iit/paper_sartore_2023_humanoids_codesign-ga-nl/assets/56030908/6e466fbd-fc45-4b28-93e7-f7467a9b6a28)
 
 </p>
 
@@ -23,8 +23,11 @@ in 2023 IEEE-RAS International Conference on Humanoid Robotics (Humanoids)
 </div>
 
 <div align="center">
-  <a href="#installation"><b>Installation</b></a>
+  <a href="#installation"><b>Installation</b></a> |
+  <a href="https://arxiv.org/abs/2312.07459"><b>Paper</b></a> |
+  <a href="https://www.youtube.com/watch?v=MlpmiOGxnlU"><b>Video</b></a>
 </div>
+
 
 ### Installation
 
@@ -45,8 +48,20 @@ docker build --tag sartore2023results .
 ### Running 
 - `GA_with_PyGad.py` : script to launch the bilevel optimization framework; 
 - `GA_processOutput.py` : script to process the output of the genetic algorithm; 
-- `CompareTorqueSimulation.py`: script to process the simulation output. 
+- `CompareTorqueSimulation.py`: script to process the simulation output.
 
+### Citing this work
+```bibtex
+@inproceedings{sartore2023codesign,
+  title={Codesign of Humanoid Robots for Ergonomic Collaboration with Multiple Humans via Genetic Algorithms and Nonlinear Optimization},
+  author={Sartore, Carlotta and Rapetti, Lorenzo and Bergonti, Fabio and Dafarra, Stefano and Traversaro, Silvio and Pucci, Daniele},
+  booktitle={2023 IEEE-RAS 22nd International Conference on Humanoid Robots (Humanoids)},
+  pages={1--8},
+  year={2023},
+  organization={IEEE}
+  doi={10.1109/Humanoids57100.2023.10375237}
+}
+```
 ### Maintainer
 
 This repository is maintained by:
